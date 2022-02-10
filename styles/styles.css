@@ -23,11 +23,17 @@ body {
   border-color: lightgray
 }
 
-.task-row p {
+.task-row input, .task-row p {
   flex: 8;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  padding: 0;
+  background-color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  border: none;
+  color: inherit;
 }
 
 .icon {
@@ -41,7 +47,7 @@ body {
   color: #8E8D8A;
 }
 
-.new {
+.new, ::placeholder{
   color: #8E8D8A;
 }
 
