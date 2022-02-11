@@ -24,7 +24,7 @@ We considered a few other color palettes (numbers 37 and 50) and some other font
 
 ### Technical issues
 
-While most of the development was smooth, we had some trouble correctly including the new font Montserrat and our icon package Font Awesome. 
+While most of the development was smooth, we had some trouble correctly including the new font Montserrat and our icon package Font Awesome. We also struggled with aligning the text and icons together correctly.
 
 ### Icons
 
