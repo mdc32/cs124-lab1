@@ -33,8 +33,6 @@
 
 1. toggle button next to "uncompleted tasks button" that deletes all completed tasks
 
-
 ### Color palette
-We chose to use color palette 19 because the eggshell evokes trustworthiness and practicality. The color is also reminiscent of traditional notepads, making the task list feel like the user is writing down a task on paper.
 
-![Color palette 19](color_palette.png)
+50, 37, 19
