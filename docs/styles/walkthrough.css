@@ -1,0 +1,9 @@
+.step {
+    display: flex;
+    flex-direction:row;
+    gap: 20px;
+}
+
+p {
+    width: 1000px;
+}
