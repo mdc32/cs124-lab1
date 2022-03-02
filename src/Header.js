@@ -1,5 +1,6 @@
-import './Header.css'
-import { FaEye, FaTrash } from 'react-icons/fa'
+import './Header.css';
+import React from 'react';
+import { FaEye, FaTrash } from 'react-icons/fa';
 
 function Header(props) {
     return (
@@ -9,7 +10,7 @@ function Header(props) {
             </div>
             <h3>Tasks</h3>
             <div class="icon ">
-                <FaTrash>
+                <FaTrash/>
             </div>
         </div>
     )

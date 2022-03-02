@@ -4,9 +4,23 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const initialData = {
-
-}
+const initialData = [
+  {
+    id: 1,
+    text: 'get groceries',
+    completed: false,
+  },
+  {
+    id: 2,
+    text: 'buy book',
+    completed: true,
+  },
+  {
+    id: 3,
+    text: 'call mom',
+    completed: false,
+  }
+]
 
 ReactDOM.render(
   <React.StrictMode>

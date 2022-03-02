@@ -7,6 +7,8 @@ import {generateUniqueID} from "web-vitals/dist/modules/lib/generateUniqueID";
 function App(props) {
     const [toggleHideCompleted, setToggleHideCompleted] = useState(false)
     const [toggleTrash, setToggleTrash] = useState(false)
+    const [listItems, setListItems] = useState([])
+
     return (
         <div className="App">
             <Header></Header>
