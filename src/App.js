@@ -6,10 +6,32 @@ import { useState } from 'react';
 import {generateUniqueID} from "web-vitals/dist/modules/lib/generateUniqueID";
 
 
+function Alert(props) {
+  return <div className={"backdrop"}>
+    <div className="modal">
+      Delete All Completed Items?
+      <div className="alert-buttons">
+        <button className={"alert-button alert-cancel"} type={"button"}
+                onClick={() => props.onClose()}>
+          No
+        </button>
+        <button className={"alert-button alert-ok"} type={"button"}
+                onClick={() => {
+                  props.onOK();
+                  props.onClose();
+                }}>
+          OK
+        </button>
+      </div>
+    </div>
+  </div>
+}
+
 function App(props) {
 
   const [isShowCompleted, setIsShowCompleted] = useState(true)
   const [tasks, setTasks] = useState(props.data)
+  const [showAlert, setShowAlert] = useState(false);
 
   function handleToggleShowCompleted() {
     setIsShowCompleted(!isShowCompleted);
@@ -37,6 +59,10 @@ function App(props) {
     ]);  
   }
 
+  function toggleModal() {
+    setShowAlert(!showAlert)
+  }
+
   function handleDeleteById(id) {
     setTasks(tasks.filter(t => !(t.id === id)))
   }
@@ -45,16 +71,17 @@ function App(props) {
     <div className="App">
       <Header
         onToggleShowCompleted={handleToggleShowCompleted}
-        onDeleteCompleted={handleDeleteCompleted}
-        isShowCompleted={isShowCompleted}
+        onToggleModal={toggleModal}
       ></Header>
       <ListContainer
         items={tasks.filter(t => !t.isCompleted || isShowCompleted)}
         onChangeField={handleChangeField}
         onToggleItemCompleted={handleToggleItemCompleted}
         onAddNewTask={handleAddNewTask}
-        onDeleteById={handleDeleteById}
       />
+        {showAlert && <Alert onClose={toggleModal} onOK={handleDeleteCompleted}>
+          Are you sure you want to Frob the blitzen?
+        </Alert>}
     </div>
   );
 }

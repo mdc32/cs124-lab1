@@ -11,11 +11,9 @@ function Header(props) {
                 </button>
             </div>
             <h3>Tasks</h3>
-            <div className="header-icon">
-                <button className="icon-button" onClick={props.onDeleteCompleted}>
-                    <FaRegTrashAlt/>
-                </button>
-            </div>
+            <button className="icon" onClick={() => props.onToggleModal()}>
+                <FaRegTrashAlt/>
+            </button>
         </div>
     )
 }
