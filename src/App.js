@@ -42,6 +42,7 @@ function App(props) {
       <Header
         onToggleShowCompleted={handleToggleShowCompleted}
         onDeleteCompleted={handleDeleteCompleted}
+        isShowCompleted={isShowCompleted}
       ></Header>
       <ListContainer
         items={tasks.filter(t => !t.isCompleted || isShowCompleted)}
