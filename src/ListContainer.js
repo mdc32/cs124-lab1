@@ -1,6 +1,7 @@
 import React from 'react';
 import ListItem from './ListItem';
-import './ListContainer.css'
+import './ListContainer.css';
+import NewListItem from './NewListItem';
 
 function ListContainer(props) {
   return (
@@ -12,6 +13,7 @@ function ListContainer(props) {
           onToggleItemCompleted={props.onToggleItemCompleted}
           {...p}
         />)}
+      <NewListItem onAddNewTask={props.onAddNewTask}/>
     </div>
   )
 }

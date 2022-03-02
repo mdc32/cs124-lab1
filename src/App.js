@@ -1,10 +1,9 @@
 import './App.css';
 import React from 'react';
 import Header from './Header';
-import ListContainer from './ListContainer'
+import ListContainer from './ListContainer';
 import { useState } from 'react';
 import {generateUniqueID} from "web-vitals/dist/modules/lib/generateUniqueID";
-
 
 function App(props) {
 
@@ -13,10 +12,12 @@ function App(props) {
 
   function handleToggleShowCompleted() {
     setIsShowCompleted(!isShowCompleted);
+    console.log(tasks)
   }
+
   function handleDeleteCompleted() {
     setTasks(tasks.filter(t => !t.isCompleted));
-  };
+  }
 
   function handleChangeField(id, field, value) {
     setTasks(tasks.map(
@@ -27,11 +28,12 @@ function App(props) {
     handleChangeField(id, "isCompleted", !tasks.find(t => t.id === id).isCompleted)
   }
 
-  function handleAddNewTask() {
+  function handleAddNewTask(task) {
+    console.log("task: ", task);
     setTasks([...tasks,
       {
         id: generateUniqueID(),
-        text: "",
+        text: "new",
         isCompleted: false
       }
     ]);  

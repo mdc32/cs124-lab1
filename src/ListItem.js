@@ -8,7 +8,10 @@ function ListItem(props) {
       <button className="task-icon icon" onClick={() => props.onToggleItemCompleted(props.id)}>
         {(props.isCompleted) ? <FaRegCheckCircle/> : <FaRegCircle/>}
       </button>
-      <input className="task-label" defaultValue={props.text} onChange={e=> props.onChangeField(props.id, "text", e.target.value)}/>
+      <input
+        className="task-label"
+        defaultValue={props.text}
+        onChange={e=> props.onChangeField(props.id, "text", e.target.value)}/>
     </div>
   )
 }
