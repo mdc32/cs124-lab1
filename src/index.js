@@ -9,9 +9,9 @@ const initialData = {
 }
 
 ReactDOM.render(
-  <React>
+  <React.StrictMode>
     <App initialData={initialData}/>
-  </React>,
+  </React.StrictMode>,
   document.getElementById('root')
 );
 

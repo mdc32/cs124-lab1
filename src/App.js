@@ -1,9 +1,10 @@
 // import './App.css';
+import React from 'react';
 import Header from './Header';
 
 function App(props) {
   return (
-    <div className="App">
+    <div>
       <Header>Hello World</Header>
     </div>
   );
