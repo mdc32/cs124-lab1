@@ -1,0 +1,30 @@
+.task-row {
+    display: flex;
+    flex-direction: row;
+    background-color: #EAE7DC;
+    align-items: center;
+    height:  2em; 
+    width: 100%;
+    border-style: none none solid;
+    border-width: 1px;
+    border-color: lightgray
+  }
+  
+.task-row input, .task-row p {
+    flex: 8;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0;
+    background-color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    border: none;
+    color: inherit;
+}
+
+.icon {
+    text-align: center;
+    text-decoration: none;
+    flex: 1;
+}

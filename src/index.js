@@ -8,23 +8,23 @@ const initialData = [
   {
     id: 1,
     text: 'get groceries',
-    completed: false,
+    isCompleted: false,
   },
   {
     id: 2,
     text: 'buy book',
-    completed: true,
+    isCompleted: true,
   },
   {
     id: 3,
     text: 'call mom',
-    completed: false,
+    isCompleted: false,
   }
 ]
 
 ReactDOM.render(
   <React.StrictMode>
-    <App initialData={initialData}/>
+    <App data={initialData}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

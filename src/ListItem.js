@@ -1,7 +1,16 @@
 import React from 'react';
+import { FaCircle } from 'react-icons/fa'
+import './ListItem.css';
 
 function ListItem(props) {
-    return
+  return (
+    <div class="task-row">
+      <div class="task-icon icon">
+        <FaCircle/>
+      </div>
+      <input class="task-label" value="Buy new John Grisham book" />
+    </div>
+  )
 }
 
 export default ListItem;
