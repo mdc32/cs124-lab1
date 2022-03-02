@@ -8,7 +8,7 @@ function ListItem(props) {
       <div class="task-icon icon">
         <FaCircle/>
       </div>
-      <input class="task-label" value="Buy new John Grisham book" />
+      <input class="task-label" defaultValue="Buy new John Grisham book" />
     </div>
   )
 }
