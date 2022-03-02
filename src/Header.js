@@ -1,12 +1,12 @@
 import './Header.css';
 import React from 'react';
-import { FaRegTrashAlt, FaRegEye } from 'react-icons/fa';
+import { FaRegTrashAlt, FaRegEye, FaRegEyeSlash } from 'react-icons/fa';
 
 function Header(props) {
     return (
         <div id="header">
             <button className="icon" onClick={props.onToggleShowCompleted}>
-                <FaRegEye/>
+                {(props.isShowCompleted) ? <FaRegEye/> : <FaRegEyeSlash/>}
             </button>
             <h3>Tasks</h3>
             <button className="icon" onClick={props.onDeleteCompleted}>
