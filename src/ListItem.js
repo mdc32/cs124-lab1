@@ -8,7 +8,7 @@ function ListItem(props) {
       <div class="task-icon icon">
         <FaRegCircle/>
       </div>
-      <input class="task-label" defaultValue="Buy new John Grisham book" />
+      <input class="task-label" defaultValue={props.text} onChange={e=> props.onChangeField(props.id, "text", e.target.value)}/>
     </div>
   )
 }
