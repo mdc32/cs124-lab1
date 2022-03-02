@@ -6,7 +6,7 @@ function ListContainer(props) {
   return (
     <div id="container">
       {props.items.map(p =>
-        <ListItem/>)}
+        <ListItem key={p.id} {...p}/>)}
     </div>
   )
 }
