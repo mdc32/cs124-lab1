@@ -5,6 +5,7 @@ import ListContainer from './ListContainer'
 import {useEffect, useState} from 'react';
 import {generateUniqueID} from "web-vitals/dist/modules/lib/generateUniqueID";
 
+
 function App(props) {
 
   const [isShowCompleted, setIsShowCompleted] = useState(true)
@@ -34,7 +35,6 @@ function App(props) {
       }
     ]);  
   }
-
 
   return (
     <div className="App">

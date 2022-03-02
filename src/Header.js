@@ -1,16 +1,16 @@
 import './Header.css';
 import React from 'react';
-import { FaEye, FaTrash } from 'react-icons/fa';
+import { FaRegTrashAlt, FaRegEye } from 'react-icons/fa';
 
 function Header(props) {
     return (
         <div id="header">
             <div class="icon">
-                <FaEye/>
+                <FaRegEye/>
             </div>
             <h3>Tasks</h3>
-            <div class="icon ">
-                <FaTrash/>
+            <div class="icon">
+                <FaRegTrashAlt/>
             </div>
         </div>
     )
