@@ -8,7 +8,7 @@ const initialData = [
   {
     id: 1,
     text: 'get groceries',
-    isCompleted: false,
+    isCompleted: true,
   },
   {
     id: 2,

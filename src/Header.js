@@ -5,9 +5,9 @@ import { FaRegTrashAlt, FaRegEye } from 'react-icons/fa';
 function Header(props) {
     return (
         <div id="header">
-            <div class="icon">
+            <button class="icon" onClick={props.handleToggleShowCompleted}>
                 <FaRegEye/>
-            </div>
+            </button>
             <h3>Tasks</h3>
             <div class="icon">
                 <FaRegTrashAlt/>
