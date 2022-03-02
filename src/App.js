@@ -11,10 +11,11 @@ function App(props) {
   const [isShowCompleted, setIsShowCompleted] = useState(true)
   const [tasks, setTasks] = useState(props.data)
 
-  const handleToggleShowCompleted = () => setIsShowCompleted(!isShowCompleted)
-
+  function handleToggleShowCompleted() {
+    setIsShowCompleted(!isShowCompleted);
+  }
   function handleDeleteCompleted() {
-    setTasks(tasks.filter(t => !t.isCompleted))
+    setTasks(tasks.filter(t => !t.isCompleted));
   };
 
   function handleChangeField(id, field, value) {
