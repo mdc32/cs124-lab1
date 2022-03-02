@@ -9,7 +9,6 @@ function App(props) {
 
   const [isShowCompleted, setIsShowCompleted] = useState(true)
   const [tasks, setTasks] = useState(props.data)
-  // [{id: 123, text: "call mom", isCompleted: true}]
 
   const handleToggleShowCompleted = () => setIsShowCompleted(!isShowCompleted)
 
@@ -41,9 +40,14 @@ function App(props) {
     <div className="App">
       <Header
         onToggleShowCompleted={handleToggleShowCompleted}
+        onDeleteCompleted={handleDeleteCompleted}
       ></Header>
       <ListContainer
-        items={tasks.filter(t => !t.isCompleted || isShowCompleted)}></ListContainer>
+        items={tasks.filter(t => !t.isCompleted || isShowCompleted)}
+        onChangeField={handleChangeField}
+        onToggleItemCompleted={handleToggleItemCompleted}
+        onAddNewTask={handleAddNewTask}
+      />
     </div>
   );
 }
