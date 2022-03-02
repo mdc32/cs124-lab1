@@ -9,9 +9,9 @@ function Header(props) {
                 <FaRegEye/>
             </button>
             <h3>Tasks</h3>
-            <div className="icon">
+            <button className="icon" onClick={props.onDeleteCompleted}>
                 <FaRegTrashAlt/>
-            </div>
+            </button>
         </div>
     )
 }
