@@ -37,6 +37,10 @@ function App(props) {
     ]);  
   }
 
+  function handleDeleteById(id) {
+    setTasks(tasks.filter(t => !(t.id === id)))
+  }
+
   return (
     <div className="App">
       <Header
@@ -49,6 +53,7 @@ function App(props) {
         onChangeField={handleChangeField}
         onToggleItemCompleted={handleToggleItemCompleted}
         onAddNewTask={handleAddNewTask}
+        onDeleteById={handleDeleteById}
       />
     </div>
   );
