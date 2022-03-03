@@ -80,7 +80,6 @@ function App(props) {
         onAddNewTask={handleAddNewTask}
       />
         {showAlert && <Alert onClose={toggleModal} onOK={handleDeleteCompleted}>
-          Are you sure you want to Frob the blitzen?
         </Alert>}
     </div>
   );
