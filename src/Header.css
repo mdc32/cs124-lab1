@@ -18,3 +18,9 @@
 #header h3 {
     flex: 7;
 }
+
+.header-icon {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+}
