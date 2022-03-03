@@ -21,7 +21,12 @@ function ListItem(props) {
         className="task-label" 
         defaultValue={props.text} 
         onChange={e => props.onChangeField(props.id, "text", e.target.value)}
-        onBlur={handleBlur}/>
+        onBlur={handleBlur}
+        onKeyPress={(e) => {
+          if (e.key === 'Enter') {
+            e.target.blur()
+          }
+        }}/>
     </div>
   )
 }
