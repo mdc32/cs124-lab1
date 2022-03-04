@@ -50,7 +50,10 @@ We had 3 people test our app, none of whom have taken this class, or have notabl
 
 Clicking Eye Icon:
 
-![Show Completed](show_completed.png | width=100)
+<img src = "show_completed.png" width="300">
+
+
+![Show Completed](show_completed.png) 
 
 ## Challenges
 
