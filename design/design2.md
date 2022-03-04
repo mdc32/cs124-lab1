@@ -32,7 +32,7 @@ We had 3 people test our app, none of whom have taken this class, or have notabl
 
 Clicking Eye Icon:
 
-![Show Completed](show_completed.png | width = 100)
+![Show Completed](show_completed.png | width=100)
 
 ## Challenges
 
