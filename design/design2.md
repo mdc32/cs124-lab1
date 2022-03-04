@@ -34,6 +34,8 @@ Clicking Eye Icon:
 
 <img src = "show_completed.png" width="300">
 
+<img src = "hide_complete.png" width="300">
+
 
 ![Show Completed](show_completed.png) 
 
