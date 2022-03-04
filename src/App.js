@@ -75,12 +75,15 @@ function App(props) {
       <Header
         onToggleShowCompleted={handleToggleShowCompleted}
         onToggleModal={toggleModal}
+        onDeleteCompleted={handleDeleteCompleted}
+        isShowCompleted={isShowCompleted}
       ></Header>
       <ListContainer
         items={tasks.filter(t => !t.isCompleted || isShowCompleted)}
         onChangeField={handleChangeField}
         onToggleItemCompleted={handleToggleItemCompleted}
         onAddNewTask={handleAddNewTask}
+        onDeleteById={handleDeleteById}
       />
         {showAlert && <Alert onClose={toggleModal} onOK={handleDeleteCompleted}>
         </Alert>}
