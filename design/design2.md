@@ -4,18 +4,6 @@
 
 In our initial discussions, some adjectives we used to describe our desired app design were "attentive", "stable", and "assertive". With this in mind, we decided on a color palette from the exercise following Dr. Milburn's lecture labeled "minimal yet warm" (number 19 on [this list](http://visme.co/blog/website-color-schemes)), which includes a pale eggshell (\#EAE7DC), a warm grey (\#8E8D8A), and a rustic tan (\#D8C3A5). We also chose the sans serif font Montserrat as we felt it reflected the desired adjectives as well.
 
-Before creating a new task:
-
-<img src='before-create-new-task.png' width=300px>
-
-While typing in new task:
-
-<img src='create-new-task.png' width=300px>
-
-After unfocusing new task input:
-
-<img src='post-create-new-task.png' width=300px>
-
 In the picture above, we used eggshell for the background, tan for the header, and grey for the new task text.
 
 ### Header
@@ -48,14 +36,24 @@ We had 3 people test our app, none of whom have taken this class, or have notabl
 
 ## Final Design
 
-Clicking Eye Icon:
+Before creating a new task:
 
-<img src = "show_completed.png" width="300">
+<img src='before-create-new-task.png' width=300px>
 
-<img src = "hide_complete.png" width="300">
+While typing in new task:
 
+<img src='create-new-task.png' width=300px>
 
-![Show Completed](show_completed.png) 
+After unfocusing new task input:
+
+<img src='post-create-new-task.png' width=300px>
+
+Clicking eye icon:
+
+<img src="show_completed.png" width="300">
+
+<img src="hide_complete.png" width="300">
+
 
 ## Challenges
 
