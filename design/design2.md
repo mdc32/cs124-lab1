@@ -6,15 +6,15 @@ In our initial discussions, some adjectives we used to describe our desired app 
 
 Before creating a new task:
 
-![Before creating new task](before-create-new-task.png)
+<img src='before-create-new-task.png' width=300px>
 
 While typing in new task:
 
-![Creating new task](create-new-task.png)
+<img src='create-new-task.png' width=300px>
 
 After unfocusing new task input:
 
-![After creating new task](post-create-new-task.png)
+<img src='post-create-new-task.png' width=300px>
 
 In the picture above, we used eggshell for the background, tan for the header, and grey for the new task text.
 
@@ -32,11 +32,11 @@ We figured it would be best to include a warning modal to make sure users dont a
 
 Delete confirmation pop-up:
 
-![Delete confirmation](delete-confirmation.png)
+<img src='delete-confirmation.png' width=300px>
 
 After confirming delete:
 
-![After deleting](post-delete.png)
+<img src='post-delete.png' width=300px>
 
 ## Alternate designs
 
