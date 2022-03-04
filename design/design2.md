@@ -4,17 +4,7 @@
 
 In our initial discussions, some adjectives we used to describe our desired app design were "attentive", "stable", and "assertive". With this in mind, we decided on a color palette from the exercise following Dr. Milburn's lecture labeled "minimal yet warm" (number 19 on [this list](http://visme.co/blog/website-color-schemes)), which includes a pale eggshell (\#EAE7DC), a warm grey (\#8E8D8A), and a rustic tan (\#D8C3A5). We also chose the sans serif font Montserrat as we felt it reflected the desired adjectives as well.
 
-Before creating a new task:
-
-![Before creating new task](before-create-new-task.png)
-
-While typing in new task:
-
-![Creating new task](create-new-task.png)
-
-After unfocusing new task input:
-
-![After creating new task](post-create-new-task.png)
+![New task](new_task.png)
 
 In the picture above, we used eggshell for the background, tan for the header, and grey for the new task text.
 
@@ -30,14 +20,6 @@ To indicate the possible actions of our app, we used icons from Font Awesome. Th
 
 We figured it would be best to include a warning modal to make sure users dont accidentally delete all completed items by tapping the trash button. So, when the trash icon is pressed, a warning box comes up at the bottom asking if the user is sure they want to delete all completed items.
 
-Delete confirmation pop-up:
-
-![Delete confirmation](delete-confirmation.png)
-
-After confirming delete:
-
-![After deleting](post-delete.png)
-
 ## Alternate designs
 
 We considered a few other color palettes (numbers 37 and 50) and some other fonts, but these design decisions were surprisingly easy. There was some more discussion about alternate designs for the overall format of the app. How do we allow the user to create a new task: is it another element in the list or a floating button at the bottom of the screen? Where should we place the buttons to manage completed items: at the top of the list (so scrolling down removes them from display), or floating, or in the header? 
@@ -50,7 +32,10 @@ We had 3 people test our app, none of whom have taken this class, or have notabl
 
 Clicking Eye Icon:
 
-![Show Completed](show_completed.png | width=100)
+<img src = "show_completed.png" width="300">
+
+
+![Show Completed](show_completed.png) 
 
 ## Challenges
 
