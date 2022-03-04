@@ -6,14 +6,18 @@ function Header(props) {
     return (
         <div id="header">
             <div className="header-icon">
+                <div className="task-icon">
                 <button className="icon-button" onClick={props.onToggleShowCompleted}>
                     {(props.isShowCompleted) ? <FaRegEye/> : <FaRegEyeSlash/>}
                 </button>
+                </div>
             </div>
             <h3>Tasks</h3>
-            <button className="icon" onClick={() => props.onToggleModal()}>
+            <div className="task-icon">
+            <button className="icon-button" onClick={() => props.onToggleModal()}>
                 <FaRegTrashAlt/>
             </button>
+            </div>
         </div>
     )
 }
