@@ -30,7 +30,9 @@ We had 3 people test our app, none of whom have taken this class, or have notabl
 
 ## Final Design
 
--- Blank --
+Clicking Eye Icon:
+
+![Show Completed](show_completed.png)
 
 ## Challenges
 
