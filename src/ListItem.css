@@ -1,0 +1,56 @@
+.task-row {
+    display: flex;
+    flex-direction: row;
+    background-color: #EAE7DC;
+    align-items: center;
+    height:  2em; 
+    width: 100%;
+    border-style: none none solid;
+    border-width: 1px;
+    border-color: lightgray
+  }
+  
+.task-row input {
+    flex: 8;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0;
+    background-color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    border: none;
+    color: inherit;
+}
+
+.icon-button {
+    /*override default button styling*/
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    
+    vertical-align: middle;
+}
+
+.icon-button * {
+    margin-top: 6px;
+}
+
+.task-icon {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #8E8D8A;
+}
+
+.new, ::placeholder{
+  color: #8E8D8A;
+}
