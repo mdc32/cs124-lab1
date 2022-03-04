@@ -5,7 +5,7 @@ import './ListItem.css';
 function ListItem(props) {
 
   function handleBlur(e) {
-    if (e.target.value == "") {
+    if (e.target.value === "") {
       props.onDeleteById(props.id)
     }
   }

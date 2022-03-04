@@ -52,11 +52,11 @@ function App(props) {
   }
 
   function handleAddNewTask(task) {
-    console.log("task: ", task);
+    // console.log("task: ", task);
     setTasks([...tasks,
       {
         id: generateUniqueID(),
-        text: "new",
+        text: task,
         isCompleted: false
       }
     ]);  

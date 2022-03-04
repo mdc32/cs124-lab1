@@ -3,19 +3,39 @@ import './NewListItem.css';
 import { FaPencilAlt } from 'react-icons/fa';
 
 function NewListItem(props) {
+
+  function handleBlur(e) {
+    if (e.target.value !== "") {
+      props.onAddNewTask(e.target.value);
+      console.log(e.target.value);
+      document.getElementById("newTaskInput").value = "";
+    }
+  }
+
+  function handleButtonClick() {
+    document.getElementById("newTaskInput").focus()
+  }
+
   return (
-    <button className="task-row new" onBlur={() => props.onAddNewTask()}>
-      <div className="task-icon icon">
-        <FaPencilAlt/>
+    <div className="task-row new">
+      <div className="task-icon">
+        <button className="icon-button" onClick={handleButtonClick}>
+          <FaPencilAlt/>
+        </button>
       </div>
       <input
+        id="newTaskInput"
         className="task-label"
         defaultValue=""
         placeholder="Create new task"
-        onBlur={e=> {props.onAddNewTask(e.target.value);
-                     console.log(e.target.value)}}
+        onBlur={handleBlur}
+        onKeyPress={(e) => {
+          if (e.key === 'Enter') {
+            e.target.blur()
+          }
+        }}
       />
-    </button>
+    </div>
   )
 }
 
