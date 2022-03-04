@@ -1,18 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import './index.css';
+import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const initialData = [
   {
     id: 1,
-    text: 'get groceries',
+    text: 'Get groceries',
     isCompleted: true,
   },
   {
     id: 2,
-    text: 'buy book',
+    text: 'Buy book',
     isCompleted: true,
   },
   {

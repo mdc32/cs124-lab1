@@ -11,6 +11,7 @@ function ListContainer(props) {
           key={p.id} 
           onChangeField={props.onChangeField} 
           onToggleItemCompleted={props.onToggleItemCompleted}
+          onDeleteById={props.onDeleteById}
           {...p}
         />)}
       <NewListItem onAddNewTask={props.onAddNewTask}/>

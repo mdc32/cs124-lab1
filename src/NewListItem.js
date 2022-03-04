@@ -4,12 +4,12 @@ import { FaPencilAlt } from 'react-icons/fa';
 
 function NewListItem(props) {
   return (
-    <button class="task-row new" onBlur={() => props.onAddNewTask()}>
-      <div class="task-icon icon">
+    <button className="task-row new" onBlur={() => props.onAddNewTask()}>
+      <div className="task-icon icon">
         <FaPencilAlt/>
       </div>
       <input
-        class="task-label"
+        className="task-label"
         defaultValue=""
         placeholder="Create new task"
         onBlur={e=> {props.onAddNewTask(e.target.value);
