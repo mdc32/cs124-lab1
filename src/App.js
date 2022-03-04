@@ -6,10 +6,10 @@ import { useState } from 'react';
 import {generateUniqueID} from "web-vitals/dist/modules/lib/generateUniqueID";
 
 
-function Alert(props) {
+function DeleteDialog(props) {
   return <div className={"backdrop"}>
     <div className="modal">
-      Delete All Completed Items?
+      Delete all completed items?
       <div className="alert-buttons">
         <button className={"alert-button alert-cancel"} type={"button"}
                 onClick={() => props.onClose()}>
@@ -20,7 +20,7 @@ function Alert(props) {
                   props.onOK();
                   props.onClose();
                 }}>
-          OK
+          Delete
         </button>
       </div>
     </div>
@@ -31,7 +31,7 @@ function App(props) {
 
   const [isShowCompleted, setIsShowCompleted] = useState(true)
   const [tasks, setTasks] = useState(props.data)
-  const [showAlert, setShowAlert] = useState(false);
+  const [isShowDeleteDialog, setShowDeleteDialog] = useState(false);
 
   function handleToggleShowCompleted() {
     setIsShowCompleted(!isShowCompleted);
@@ -52,7 +52,6 @@ function App(props) {
   }
 
   function handleAddNewTask(task) {
-    // console.log("task: ", task);
     setTasks([...tasks,
       {
         id: generateUniqueID(),
@@ -63,7 +62,7 @@ function App(props) {
   }
 
   function toggleModal() {
-    setShowAlert(!showAlert)
+    setShowDeleteDialog(!isShowDeleteDialog)  
   }
 
   function handleDeleteById(id) {
@@ -85,8 +84,7 @@ function App(props) {
         onAddNewTask={handleAddNewTask}
         onDeleteById={handleDeleteById}
       />
-        {showAlert && <Alert onClose={toggleModal} onOK={handleDeleteCompleted}>
-        </Alert>}
+        {isShowDeleteDialog && <DeleteDialog onClose={toggleModal} onOK={handleDeleteCompleted}/>}
     </div>
   );
 }
